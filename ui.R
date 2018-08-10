@@ -363,7 +363,7 @@ shinyUI(
 # -------------------------------link hacia el github de la app ------------------------------------------
        
         
-        tabPanel(title="",icon=icon("github","fa-2x"),value="home")
+        tabPanel(title=tags$a(href="https://github.com/bencuben/Mapa-criminalidad-app-"),icon=icon("github","fa-2x"),value="home")
 
 
 

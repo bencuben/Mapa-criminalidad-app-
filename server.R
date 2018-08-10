@@ -20,7 +20,8 @@ shinyServer(function(input, output) {
   
   observeEvent(input$navibar,{
     if(input$navibar == "home"){
-      browseURL("https://github.com/bencuben/Mapa-criminalidad-app-")
+      browseURL("https://github.com/bencuben/Mapa-criminalidad-app-" )
+      
     }
   })
   
