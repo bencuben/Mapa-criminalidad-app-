@@ -22,7 +22,7 @@ shinyUI(
              
      # ------------------------------------ tabulacion de Inducción------------------------------------------------------                  
              
-    tabPanel(title="Sobre la App",
+    tabPanel(title="Sobre la App",icon = icon("info-circle","fa-1x"),
              
              #se agrega el tema de la pagina
              
@@ -33,11 +33,12 @@ shinyUI(
                          column(3,img(src="logo_u.png", height=150, width=250)),
                          column(8,tags$p(tags$h1("CRIMEN.STAT",align="center"),
                                          tags$br(),
-                                         tags$p("La problemática sobre el orden público en el país ha sido de gran importancia para toda la comunidad en general, es por ello que se crea la necesidad de conocer más a fondo sobre todos estos flagelos. Sin embargo es un tema de gran extensión, es por ello que se decidió trabajar con tres conjuntos de datos alojados en la página de DATOS ABIERTOS, lo cuales nos permiten darle una mirada a un mundo nuevo de posibilidades que nos brindan el análisis de datos y las aplicaciones web y aprovechar todas estas herramientas e información para crear una cultura social, además de educar en las personas que desconocen el tema y adicionalmente permite a los entes gubernamentales encargados tomar mejores decisiones respecto a estas problemáticas. ",tags$br(),
+                                         tags$p("La problemática sobre el orden público en el país ha sido de gran importancia para toda la comunidad en general, es por ello que se crea la necesidad de conocer más a fondo sobre todos estos flagelos. Sin embargo es un tema de gran extensión, es por ello que se decidió trabajar con tres conjuntos de datos alojados en la página de", tags$b("DATOS ABIERTOS"), "durante el mes de abril del año 2018 lo cuales nos permiten darle una mirada a un mundo nuevo de posibilidades que nos brindan el análisis de datos y las aplicaciones web y aprovechar todas estas herramientas e información para crear una cultura social, además de educar en las personas que desconocen el tema y adicionalmente permite a los entes gubernamentales encargados tomar mejores decisiones respecto a estas problemáticas. ",tags$br(),
                                          tags$br("Esta aplicación fue desarrollada con el fin de proporcionar información clara  y oportuna sobre algunos de los eventos delictivos del país o acciones realizadas por las autoridades judiciales, además de proporcionar una alternativa didáctica y dinámica para la divulgación de información a partir de estadísticas descriptivas interactuando con aplicaciones web"),tags$br(),
-                                         
-                                                tags$b("Brahian Cano Urrego"),tags$br(),tags$b("Yeison Yovany Ocampo Naranjo"),align="center"),
-                                         tags$p("en acompañamiento del profesor:",tags$b("Freddy Hernández Barajas"),align="center")))
+                                         tags$p("Los departamentos que no cuentan con casos reportados no pueden ser mostrados por lo tanto solo se presentan las frecuencias en el resto de departamentos en el país. Cabe aclarar que la ausencia de estos reportes no significa que no se estén cometiendo, sino que no fueron reportados como tal. Adicionalmente aclaramos que los datos utilizados fueron utilizados en ",tags$b("mayo del 2018")," y es posible que se incorporen modificaciones a medida que se actualicen los conjuntos de datos es por ello que algunas de las principales características se presentan a continuación:.",HTML("<ul><li>Los datos utilizados en este trabajo son de libre acceso</li><li>Las pestañas que se presentan en esta aplicación son solo algunas de las consideradas de interés para toda la comunidad</li><li>Las variables utilizadas fueron escogidas cuidadosamente con el fin de que la comunidad pueda interactuar y sentirse relacionada</li><li>Los botones fueron seleccionados de manera que permita una fácil comprensión y manejo al usuario</li></ul>")),tags$br(),
+                                         tags$p("Respecto a su utilización es sencillo ya que posee botones que pueden ser precionados y mostrarán algunas de las principales opciones tales como:",HTML("<ul><li>Escoger el distinto tipo de delito en la parte superior, además de una acceso al repositorio donde se encuentran alojados los archivos</li><li>Cuenta con un botón sobre la escogencia en la unidad de frecuencia además podrás ver estos resultados al dar un click cobre el mapa interactivo.</li><li> En el costado izquierdo adicionalmente hay una serie de flitros diferentes en cada pestaña que permiten buscar o cconsultar sobras las variables que muestran el número de casos reportados con las características de interés.</li><li>Podrás observar el comportamiento de un departamento con respecto al resto del país para analizar proporciones a nivel nacional.</li></ul>")),
+                                                align="center"),
+                                         tags$p(tags$b("Brahian Cano Urrego"),tags$br(),tags$b("Yeison Yovany Ocampo Naranjo"),tags$br(),"en acompañamiento del profesor:",tags$b("Freddy Hernández Barajas"),align="center")))
                          
                        ),
                        
@@ -53,7 +54,7 @@ shinyUI(
      # ------------------------------------Primera tabulacion ------------------------------------------------------
 
              
-    tabPanel(title= "Recuperacion de carros",
+    tabPanel(title= "Recuperacion de carros",icon=icon("car"),
       
       
       #titulo de la app
@@ -153,7 +154,7 @@ shinyUI(
     # ----------------------------------------Segunda tabulacion ------------------------------------------------------
 
     
-  tabPanel(title="Homicidios en accidentes de tránsito",
+  tabPanel(title="Homicidios en accidentes de tránsito",icon=icon("motorcycle"),
               
      
                       
@@ -261,7 +262,7 @@ shinyUI(
     # -------------------------------tercera tabulacion ------------------------------------------------------
 
     
-    tabPanel(title="Hurto a Peatones",
+    tabPanel(title="Hurto a Peatones",icon=icon("drupal"),
              
 
              
