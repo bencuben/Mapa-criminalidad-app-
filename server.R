@@ -112,12 +112,12 @@ shinyServer(function(input, output) {
       
     if(input$frecuencias2==TRUE){
       mapa@data$frec2<-as.vector(round(table(aux2.3$Departamento)*100000/poblacion,2))
-      texto<-"Proporcion de recuperaciones por cada 100.000:"
+      texto<-"Proporcion de homicidios por cada 100.000:"
       
     }else{
       
       mapa@data$frec2<-as.vector(table(aux2.3$Departamento))
-      texto<-"Numero de recuperaciones:"
+      texto<-"Numero de homicidios:"
     }
     
     
@@ -170,12 +170,12 @@ shinyServer(function(input, output) {
     
     if(input$frecuencias3==TRUE){
       mapa@data$frec3<-as.vector(round(table(aux3.2$Departamento)*10000/poblacion,2))
-      texto<-"Proporcion de recuperaciones por cada 10.000:"
+      texto<-"Proporcion de hurtos por cada 10.000:"
       
     }else{
       
       mapa@data$frec3<-as.vector(table(aux3.2$Departamento))
-      texto<-"Numero de recuperaciones:"
+      texto<-"Numero de hurtos:"
     }
     
     #atributos del mapa

@@ -22,7 +22,7 @@ shinyUI(
              
      # ------------------------------------ tabulacion de Inducción------------------------------------------------------                  
              
-    tabPanel(title="Sobre la App",icon = icon("info-circle","fa-2x"),
+    tabPanel(title="Sobre la App",icon = icon("info-circle","fa-1x"),
              
              #se agrega el tema de la pagina
              
@@ -54,7 +54,7 @@ shinyUI(
      # ------------------------------------Primera tabulacion ------------------------------------------------------
 
              
-    tabPanel(title= "Recuperacion de carros",icon=icon("car","fa-2x"),
+    tabPanel(title= "Recuperacion de carros",icon=icon("car","fa-1x"),
       
       
       #titulo de la app
@@ -154,7 +154,7 @@ shinyUI(
     # ----------------------------------------Segunda tabulacion ------------------------------------------------------
 
     
-  tabPanel(title="Homicidios en accidentes de tránsito",icon=icon("motorcycle","fa-2x"),
+  tabPanel(title="Homicidios en accidentes de tránsito",icon=icon("motorcycle","fa-1x"),
               
      
                       
@@ -262,7 +262,7 @@ shinyUI(
     # -------------------------------tercera tabulacion ------------------------------------------------------
 
     
-    tabPanel(title="Hurto a Peatones",icon=icon("drupal","fa-2x"),
+    tabPanel(title="Hurto a Peatones",icon=icon("drupal","fa-1x"),
              
 
              
